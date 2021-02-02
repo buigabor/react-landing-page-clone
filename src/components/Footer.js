@@ -6,7 +6,7 @@ import { footerStyles } from './footerStyle';
 
 export default function Footer() {
   return (
-		<>
+
 			<footer css={footerStyles}>
 				<div className='footer-top-wrapper'>
 					<div className='footer__copyright'>
@@ -75,6 +75,6 @@ export default function Footer() {
 					</div>
 				</div>
 			</footer>
-		</>
+
 	);
 }

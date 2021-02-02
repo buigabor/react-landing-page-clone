@@ -4,7 +4,7 @@ import { sectionDarkmode } from './sectionDarkModeStyle';
 
 export default function SectionDarkMode() {
   return (
-		<>
+
 			<section css={sectionDarkmode}>
 				<div className='darkmode-text-wrapper'>
 					<h2>And of course, dark mode.</h2>
@@ -16,6 +16,6 @@ export default function SectionDarkMode() {
 					<img src='img/en-dark-ns-cut.png' alt='' />
 				</div>
 			</section>
-		</>
+
 	);
 }
