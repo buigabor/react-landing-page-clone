@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Wrapper } from '../util/Wrapper';
+import { Wrapper } from '../util/wrapper';
 
 export const sectionExpiration = css`
 	display: grid;

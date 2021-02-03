@@ -1,10 +1,20 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
-import { CardContainer } from '../util/CardContainer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { React, useEffect } from 'react';
+import { CardContainer } from '../util/cardContainer';
 import { renderSVG } from '../util/renderSVG';
 import { sectionExpiration } from './sectionExpirationStyle';
 
+
+
+
 export default function SectionExpiration() {
+
+useEffect(() => {
+	AOS.init({ duration: 1000 });
+}, []);
+
   return (
 		<section css={sectionExpiration}>
 			<div className='wrapper'>
@@ -26,7 +36,11 @@ export default function SectionExpiration() {
 						<span className='card__text-p milk'>Expires in 15 days</span>
 					</div>
 				</CardContainer>
-				<CardContainer bgColor='white-second'>
+				<CardContainer
+					data-aos-delay='100'
+					data-aos='fade-up'
+					bgColor='white-second'
+				>
 					<div className='card__header-wrapper expires'>
 						<span className='card__header-icon-svg'>
 							{renderSVG('sand-glass')}
@@ -38,7 +52,11 @@ export default function SectionExpiration() {
 						<span className='card__text-p'>Feb 1, 2021</span>
 					</div>
 				</CardContainer>
-				<CardContainer bgColor='white-third'>
+				<CardContainer
+					data-aos-delay='300'
+					data-aos='fade-up'
+					bgColor='white-third'
+				>
 					<div className='card__header-wrapper expires'>
 						<span className='card__header-icon-svg'>
 							{renderSVG('sand-glass')}

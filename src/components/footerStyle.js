@@ -50,7 +50,12 @@ export const footerStyles = css`
 					a {
 						text-decoration: none;
 						color: #fff;
-						border-bottom: 2px solid rgb(156, 156, 156);
+						border-bottom: 1px solid rgb(255, 255, 255, 0.45);
+						padding: 3px 0;
+						transition: all 0.4s ease;
+						&:hover {
+							border-bottom: 1px solid rgb(255, 255, 255);
+						}
 					}
 				}
 			}
@@ -68,11 +73,13 @@ export const footerStyles = css`
 			}
 			li {
 				list-style: none;
-				margin: 0 20px;
+				margin: 0 10px;
 				a {
 					text-decoration: none;
 					color: #fff;
 					font-size: 30px;
+					padding: 10px 20px;
+					border-radius: 8px;
 					&:hover {
 						background-color: rgba(255, 255, 255, 0.1);
 					}
@@ -115,6 +122,10 @@ export const footerStyles = css`
 					opacity: 0.45;
 					font-size: 22px;
 					margin-right: 30px;
+					transition: opacity 0.4s ease 0s;
+					&:hover {
+						opacity: 1;
+					}
 				}
 			}
 		}

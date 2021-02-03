@@ -1,20 +1,22 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
-import { CardContainer } from '../util/CardContainer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { React, useEffect } from 'react';
+import { CardContainer } from '../util/cardContainer';
 import { renderSVG } from '../util/renderSVG';
 import { sectionAlwaysFresh } from './sectionAlwaysFesh';
 
 export default function SectionAlwaysFresh() {
+
+	useEffect(() => {
+		AOS.init({ duration: 1000 });
+	}, []);
   return (
 		<section css={sectionAlwaysFresh}>
 			<div>
 				<CardContainer bgColor='pasta'>
 					<div className='card__header-wrapper'>
-						<span
-							className='card__header-icon'
-							role='img'
-							aria-label='Pasta'
-						>
+						<span className='card__header-icon' role='img' aria-label='Pasta'>
 							🍝
 						</span>
 						<span className='card__header-number'>2</span>
@@ -24,7 +26,11 @@ export default function SectionAlwaysFresh() {
 						<span className='card__text-p milk'>Fresh until tomorrow</span>
 					</div>
 				</CardContainer>
-				<CardContainer bgColor='white-second'>
+				<CardContainer
+					data-aos-delay='100'
+					data-aos='fade-up'
+					bgColor='white-second'
+				>
 					<div className='card__header-wrapper expires'>
 						<span className='card__header-icon-svg'>{renderSVG('clock')}</span>
 						<span className='card__header-clock-text'>Shelf life</span>
@@ -34,7 +40,11 @@ export default function SectionAlwaysFresh() {
 						<span className='card__text-p'>Feb 1, 2021</span>
 					</div>
 				</CardContainer>
-				<CardContainer bgColor='white-third'>
+				<CardContainer
+					data-aos-delay='300'
+					data-aos='fade-up'
+					bgColor='white-third'
+				>
 					<div className='card__header-wrapper expires'>
 						<span className='card__header-icon-svg'>{renderSVG('eye')}</span>
 						<span className='card__header-eye-text'>Tracked for</span>

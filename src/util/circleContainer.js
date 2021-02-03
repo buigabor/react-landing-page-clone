@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { VegStyles } from './VegStyles';
+import { VegStyles } from './vegStyles';
 
 export const CircleContainer = styled.div`
 	${VegStyles};

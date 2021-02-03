@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
-import { VegStyles } from './VegStyles';
+import { VegStyles } from './vegStyles';
+
 
 export const CardContainer = styled.div`
 	${VegStyles};

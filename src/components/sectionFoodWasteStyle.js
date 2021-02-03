@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Wrapper } from '../util/Wrapper';
+import { Wrapper } from '../util/wrapper';
 
 export const sectionFoodWaste = css`
 	display: grid;
@@ -21,5 +21,14 @@ export const sectionFoodWaste = css`
 
 	.wrapper {
 		${Wrapper}
+	}
+
+	[data-aos='grow-size'] {
+		transform: scale(0);
+		transition-property: transform, opacity;
+
+		&.aos-animate {
+			transform: scale(1);
+		}
 	}
 `;

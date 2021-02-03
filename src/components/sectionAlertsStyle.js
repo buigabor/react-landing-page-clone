@@ -1,5 +1,23 @@
-import { css } from '@emotion/react';
-import { Wrapper } from '../util/Wrapper';
+import { css, keyframes } from '@emotion/react';
+import { Wrapper } from '../util/wrapper';
+
+const slideUpAndDisappear = keyframes`
+  0% {
+    transform: translateY(200px);
+  }
+
+  70% {
+    transform: translateY(0px);
+  }
+
+	85% {
+    transform: translateY(10px);
+		opacity: 0.5
+  }
+
+	100%{transform: translateY(15px);
+		opacity: 0}
+`;
 
 
 export const sectionAlerts = css`
@@ -24,12 +42,28 @@ export const sectionAlerts = css`
 	.wrapper {
 		${Wrapper}
 	}
+
+	[data-aos='grow-size'] {
+		transform: scale(0);
+		transition-property: transform;
+
+		&.aos-animate {
+			transform: scale(1);
+		}
+	}
+
+	[data-aos='slide-up-custom'] {
+		&.aos-animate {
+			animation: ${slideUpAndDisappear} 1.8s ease;
+		}
+	}
 `;
 
 export const notificationsWrapperStyle = css`
 	position: absolute;
 	width: 100%;
-	bottom: 0px;
+	bottom: -40px;
+	left: 75px;
 
 	div {
 		background-color: rgba(0, 0, 0, 0.6);
@@ -49,4 +83,5 @@ export const notificationsWrapperStyle = css`
 			margin-right: 5px;
 		}
 	}
+
 `;

@@ -1,7 +1,7 @@
 
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import { CardContainer } from '../util/CardContainer';
+import { CardContainer } from '../util/cardContainer';
 import { sectionOpeningTime } from './sectionOpeningTimesStyle';
 
 export default function SectionOpeningTimes() {
@@ -20,7 +20,13 @@ export default function SectionOpeningTimes() {
 						<span className='card__header-icon' role='img' aria-label='Egg'>
 							🥚
 						</span>
-						<span className='card__header-number'>28</span>
+						<span
+							data-aos-delay='100'
+							data-aos='pop-size'
+							className='card__header-number'
+						>
+							28
+						</span>
 					</div>
 					<div className='card__text-wrapper'>
 						<span className='card__text-h'>Eggs</span>
@@ -32,7 +38,13 @@ export default function SectionOpeningTimes() {
 						<span className='card__header-icon' role='img' aria-label='Cheese'>
 							🧀
 						</span>
-						<span className='card__header-number'>12</span>
+						<span
+							data-aos='pop-size'
+							// data-aos-delay='550'
+							className='card__header-number delay-cheese-animation'
+						>
+							12
+						</span>
 					</div>
 					<div className='card__text-wrapper'>
 						<span className='card__text-h'>Cheese</span>
@@ -44,7 +56,14 @@ export default function SectionOpeningTimes() {
 						<span className='card__header-icon' role='img' aria-label='Mathca'>
 							🍵
 						</span>
-						<span className='card__header-number'>9</span>
+						<span
+							data-aos='pop-size'
+							// data-aos-delay='400'
+							data-aos-anchor='.delay-cheese-animation'
+							className='card__header-number delay-matcha-animation'
+						>
+							9
+						</span>
 					</div>
 					<div className='card__text-wrapper'>
 						<span className='card__text-h'>Matcha</span>
@@ -52,7 +71,7 @@ export default function SectionOpeningTimes() {
 					</div>
 				</CardContainer>
 				<CardContainer bgColor='tomatosauce'>
-					<div className='card__header-wrapper'>
+					<div className='card__header-wrapper '>
 						<span
 							className='card__header-icon'
 							role='img'
@@ -60,7 +79,14 @@ export default function SectionOpeningTimes() {
 						>
 							🥫
 						</span>
-						<span className='card__header-number'>2</span>
+						<span
+							data-aos='pop-size'
+							// data-aos-delay='550'
+							data-aos-anchor='.delay-cheese-animation'
+							className='card__header-number delay-tomatosauce-animation'
+						>
+							2
+						</span>
 					</div>
 					<div className='card__text-wrapper'>
 						<span className='card__text-h'>Tomato sauce</span>

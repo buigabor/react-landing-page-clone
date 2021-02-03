@@ -1,13 +1,26 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
-import { CardContainer } from '../util/CardContainer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect } from 'react';
+import { CardContainer } from '../util/cardContainer';
 import { sectionFoodWaste } from './sectionFoodWasteStyle';
+// ..
 
 export default function SectionFoodWaste() {
+	useEffect(()=>{
+		AOS.init({duration: 1000})
+	},[])
+
   return (
 		<section css={sectionFoodWaste}>
 			<div className='card-grid'>
-				<CardContainer bgColor='tomato' className='card-container'>
+				<CardContainer
+					data-aos='grow-size'
+					data-aos-delay='500'
+					data-aos-anchor='.pineapple-anchor'
+					bgColor='tomato'
+					className='tomato-anchor'
+				>
 					<div className='card__header-wrapper'>
 						<span className='card__header-icon' role='img' aria-label='Tomato'>
 							🍅
@@ -31,7 +44,12 @@ export default function SectionFoodWaste() {
 						<span className='card__text-p'>Fresh for 3 more days</span>
 					</div>
 				</CardContainer>
-				<CardContainer bgColor='pineapple'>
+				<CardContainer
+					data-aos='grow-size'
+					data-aos-delay='200'
+					bgColor='pineapple'
+					className='pineapple-anchor'
+				>
 					<div className='card__header-wrapper'>
 						<span
 							className='card__header-icon'
@@ -47,7 +65,12 @@ export default function SectionFoodWaste() {
 						<span className='card__text-p'>Fresh for 3 more days</span>
 					</div>
 				</CardContainer>
-				<CardContainer bgColor='carrot'>
+				<CardContainer
+					data-aos='grow-size'
+					data-aos-delay='800'
+					bgColor='carrot'
+					data-aos-anchor='.tomato-anchor'
+				>
 					<div className='card__header-wrapper'>
 						<span className='card__header-icon' role='img' aria-label='Carrot'>
 							🥕
