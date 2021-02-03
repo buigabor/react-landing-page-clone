@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Wrapper } from '../util/wrapper';
+import { wrapper } from '../util/wrapper';
 
 
 export const sectionAlwaysFresh = css`
@@ -9,6 +9,6 @@ export const sectionAlwaysFresh = css`
 	padding: 0px 40px 0 40px;
 
 	.wrapper {
-		${Wrapper}
+		${wrapper}
 	}
 `;
