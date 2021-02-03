@@ -1,5 +1,5 @@
 import { css, keyframes } from '@emotion/react';
-import { Wrapper } from '../util/wrapper';
+import { wrapper } from '../util/wrapper';
 
 const slideUpAndDisappear = keyframes`
   0% {
@@ -40,7 +40,7 @@ export const sectionAlerts = css`
 	}
 
 	.wrapper {
-		${Wrapper}
+		${wrapper}
 	}
 
 	[data-aos='grow-size'] {

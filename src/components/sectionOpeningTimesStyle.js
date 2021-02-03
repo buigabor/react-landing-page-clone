@@ -1,5 +1,5 @@
 import { css, keyframes } from '@emotion/react';
-import { Wrapper } from '../util/wrapper';
+import { wrapper } from '../util/wrapper';
 
 const popSize = keyframes`
   0% {
@@ -35,7 +35,7 @@ export const sectionOpeningTime = css`
 	}
 
 	.wrapper {
-		${Wrapper}
+		${wrapper}
 	}
 
 	.delay-cheese-animation {

@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Wrapper } from '../util/wrapper';
+import { wrapper } from '../util/wrapper';
 
 export const sectionFoodWaste = css`
 	display: grid;
@@ -20,7 +20,7 @@ export const sectionFoodWaste = css`
 	}
 
 	.wrapper {
-		${Wrapper}
+		${wrapper}
 	}
 
 	[data-aos='grow-size'] {

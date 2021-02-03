@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
-import { VegStyles } from './vegStyles';
+import { vegStyles } from './vegStyles';
 
 export const CircleContainer = styled.div`
-	${VegStyles};
+	${vegStyles};
 	width: 220px;
 	height: 220px;
 	border-radius: 50%;
