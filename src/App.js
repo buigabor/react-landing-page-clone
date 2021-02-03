@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import SectionAlerts from './components/SectionAlerts';
 import SectionAlwaysFresh from './components/SectionAlwaysFresh';
 import SectionDarkMode from './components/SectionDarkMode';
 import SectionEatFresh from './components/SectionEatFresh';
@@ -431,6 +432,7 @@ function App() {
 			<SectionExpiration />
 			<SectionAlwaysFresh />
 			<SectionOpeningTimes />
+			<SectionAlerts/>
 			<SectionDarkMode />
 			<SectionQRCode />
 		<Footer/>

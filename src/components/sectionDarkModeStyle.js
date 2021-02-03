@@ -30,4 +30,13 @@ export const sectionDarkmode = css`
 			max-width: 360px;
 		}
 	}
+
+	[data-aos='slide-up-custom'] {
+		transform: translateY(80px);
+		transition-property: transform;
+
+		&.aos-animate {
+			transform: translateY(0px);
+		}
+	}
 `;

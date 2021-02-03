@@ -1,7 +1,19 @@
-import { css } from '@emotion/react';
-import { Wrapper } from '../util/Wrapper';
+import { css, keyframes } from '@emotion/react';
+import { Wrapper } from '../util/wrapper';
 
+const popSize = keyframes`
+  0% {
+    transform: scale(1)
+  }
 
+  50% {
+    transform: scale(2)
+  }
+
+	100% {
+    transform: scale(1)
+  }
+`;
 
 export const sectionOpeningTime = css`
 	display: grid;
@@ -24,5 +36,27 @@ export const sectionOpeningTime = css`
 
 	.wrapper {
 		${Wrapper}
+	}
+
+	.delay-cheese-animation {
+		animation-delay: 0.4s !important;
+	}
+
+	.delay-matcha-animation {
+		animation-delay: 0.8s !important;
+	}
+
+	.delay-tomatosauce-animation {
+		animation-delay: 1.2s !important;
+	}
+
+	[data-aos='pop-size'] {
+		/* animation: ${popSize} 1s ease;
+		transform: scale(0);
+		transition-property: transform, opacity; */
+
+		&.aos-animate {
+			animation: ${popSize} 0.6s ease;
+		}
 	}
 `;
