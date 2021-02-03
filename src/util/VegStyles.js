@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 
 
-export const VegStyles = (props) => {
+export const vegStyles = (props) => {
 	if (props.bgColor === 'lettuce') {
 		return css`
 			background: linear-gradient(
