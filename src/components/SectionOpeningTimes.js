@@ -1,7 +1,7 @@
 
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import { CardContainer } from '../util/cardContainer';
+import { CardContainer } from '../util/CardContainers';
 import { sectionOpeningTime } from './sectionOpeningTimesStyle';
 
 export default function SectionOpeningTimes() {
