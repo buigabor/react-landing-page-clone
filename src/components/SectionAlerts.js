@@ -2,7 +2,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { React, useEffect } from 'react';
-import { CircleContainer } from '../util/CircleContainer';
+import { CircleContainer } from '../util/CircleContainers';
 import { writeBottomTextInCircle, writeTopTextInCircle } from '../util/writeTextInCircle';
 import { sectionAlerts } from './sectionAlertsStyle';
 

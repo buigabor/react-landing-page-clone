@@ -1,5 +1,5 @@
 import { css, keyframes } from '@emotion/react';
-import { wrapper } from '../util/wrapper';
+import { wrapper } from '../util/wrappers';
 
 const slideUpAndDisappear = keyframes`
   0% {

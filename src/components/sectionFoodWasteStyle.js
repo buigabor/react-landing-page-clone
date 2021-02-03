@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { wrapper } from '../util/wrapper';
+import { wrapper } from '../util/wrappers';
 
 export const sectionFoodWaste = css`
 	display: grid;
